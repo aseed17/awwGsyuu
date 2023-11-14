@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login form</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Montserrat:wght@500&family=Open+Sans&display=swap">
+
+    <style>
+        * {
+            font-family: 'Inria Sans', sans-serif;
+            color: #002651;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background-color: #28c7fa;
+        }
+
+        .login-form {
+            width: 350px;
+            border: 2px solid #a1eafb;
+            padding: 30px 20px;
+            border-radius: 10px;
+            height: 320px;
+/*            margin: 200px auto;*/
+
+        }
+
+        .login-form legend{
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .form-input {
+        	display: block;
+            margin-bottom: 20px;
+        }
+
+
+        .form-input label{
+        	display: block;
+        	margin-bottom: 10px;}
+
+        .form-input input{
+
+        	display: block;
+        	width: 100%;
+        	padding: 10px 15px;
+        	border-radius: 10px;
+        	border: 3px solid #0e153a;
+        	background: #e2f3f5;
+        }
+
+        .btn{
+        	border-radius: 10px;
+        	padding: 10px 15px;
+        	background-color: #0e153a ;
+        	margin-right: 15px;
+        	border:3px solid #;
+        	
+
+        }
+        
+        
+
+        .text-light{
+        	color:#e2f3f5;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <form id="login-form"
+
+    	style=" width: 100% ; 
+    	height: 100vh; 
+		display: flex;
+    	justify-content: center; align-items: center;"
+    		>
+        <fieldset class="login-form">
+            <legend class="text-light">
+                <i class="fas fa-unlock text-light fa-fw"></i>Login Form
+            </legend>
+
+            <div class="form-input">
+                <label class="text-light">
+                    <i class="fas fa-user text-light fa-fw"></i>
+                    Username</label>
+                    <input type="text" name="username" placeholder="username" id="username" required>
+                
+            </div>
+            <div class="form-input">
+                <label class="text-light">
+                    <i class="fas fa-key text-light fa-fw"></i>Password
+                </label>
+                    <input type="password" name="password" placeholder="password" id="password" required>
+                
+            </div>
+
+            <button class="btn text-light" type="submit">
+                <i class="fas fa-lock-open text-light fa-fw"></i>Login
+            </button>
+            <a href="https://youtu.be/BBJa32lCaaY?si=QesuG4ENZbePT6ux" target="_blank">Register Account</a>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
